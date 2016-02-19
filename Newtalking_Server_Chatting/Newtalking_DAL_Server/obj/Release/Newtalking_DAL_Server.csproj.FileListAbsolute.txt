@@ -1,0 +1,12 @@
+d:\users\铭\documents\visual studio 2010\Projects\Newtalking_DAL_Server\Newtalking_DAL_Server\bin\Release\Newtalking_DAL_Server.dll
+d:\users\铭\documents\visual studio 2010\Projects\Newtalking_DAL_Server\Newtalking_DAL_Server\bin\Release\Newtalking_DAL_Server.pdb
+d:\users\铭\documents\visual studio 2010\Projects\Newtalking_DAL_Server\Newtalking_DAL_Server\obj\Release\Newtalking_DAL_Server.dll
+d:\users\铭\documents\visual studio 2010\Projects\Newtalking_DAL_Server\Newtalking_DAL_Server\obj\Release\Newtalking_DAL_Server.pdb
+D:\Users\铭\documents\visual studio 2010\Projects\Newtalking_DAL_Server\Newtalking_DAL_Server\obj\Release\Newtalking_DAL_Server.csprojResolveAssemblyReference.cache
+D:\Users\铭\documents\visual studio 2010\Projects\Newtalking_DAL_Server\Newtalking_DAL_Server\bin\Release\Model.dll
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_DAL_Server\bin\Release\Newtalking_DAL_Server.dll
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_DAL_Server\bin\Release\Newtalking_DAL_Server.pdb
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_DAL_Server\bin\Release\Model.dll
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_DAL_Server\obj\Release\Newtalking_DAL_Server.csprojResolveAssemblyReference.cache
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_DAL_Server\obj\Release\Newtalking_DAL_Server.dll
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_DAL_Server\obj\Release\Newtalking_DAL_Server.pdb

@@ -1,0 +1,4 @@
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Data\bin\Release\Data.dll
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Data\bin\Release\Data.pdb
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Data\obj\Release\Data.dll
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Data\obj\Release\Data.pdb

@@ -1,0 +1,13 @@
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_BLL_Server\bin\Release\Newtalking_BLL_Server.dll
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_BLL_Server\bin\Release\Newtalking_BLL_Server.pdb
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_BLL_Server\bin\Release\Data.dll
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_BLL_Server\bin\Release\Model.dll
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_BLL_Server\bin\Release\Newtalking_DAL_Data.dll
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_BLL_Server\bin\Release\Newtalking_DAL_Server.dll
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_BLL_Server\bin\Release\Data.pdb
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_BLL_Server\bin\Release\Model.pdb
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_BLL_Server\bin\Release\Newtalking_DAL_Data.pdb
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_BLL_Server\bin\Release\Newtalking_DAL_Server.pdb
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_BLL_Server\obj\Release\Newtalking_BLL_Server.csprojResolveAssemblyReference.cache
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_BLL_Server\obj\Release\Newtalking_BLL_Server.dll
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_BLL_Server\obj\Release\Newtalking_BLL_Server.pdb

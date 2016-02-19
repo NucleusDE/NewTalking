@@ -1,0 +1,17 @@
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Server_Properties\bin\Debug\Server_Properties.dll
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Server_Properties\bin\Debug\Server_Properties.pdb
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Server_Properties\obj\Debug\Server_Properties.csprojResolveAssemblyReference.cache
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Server_Properties\obj\Debug\Server_Properties.dll
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Server_Properties\obj\Debug\Server_Properties.pdb
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting_Temp\Server_Properties\bin\Debug\Server_Properties.dll
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting_Temp\Server_Properties\bin\Debug\Server_Properties.pdb
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting_Temp\Server_Properties\obj\Debug\Server_Properties.csprojResolveAssemblyReference.cache
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting_Temp\Server_Properties\obj\Debug\Server_Properties.dll
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting_Temp\Server_Properties\obj\Debug\Server_Properties.pdb
+C:\Users\Dell-\Desktop\Newtalking_Client_Windows\Server_Properties\bin\Debug\Server_Properties.dll
+C:\Users\Dell-\Desktop\Newtalking_Client_Windows\Server_Properties\bin\Debug\Server_Properties.pdb
+C:\Users\Dell-\Desktop\Newtalking_Client_Windows\Server_Properties\obj\Debug\Server_Properties.csprojResolveAssemblyReference.cache
+C:\Users\Dell-\Desktop\Newtalking_Client_Windows\Server_Properties\obj\Debug\Server_Properties.dll
+C:\Users\Dell-\Desktop\Newtalking_Client_Windows\Server_Properties\obj\Debug\Server_Properties.pdb
+C:\Users\Dell-\Desktop\Newtalking_Client_Windows\Server_Properties\bin\Debug\Model.dll
+C:\Users\Dell-\Desktop\Newtalking_Client_Windows\Server_Properties\bin\Debug\Model.pdb

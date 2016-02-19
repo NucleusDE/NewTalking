@@ -1,0 +1,5 @@
+C:\Users\Dell-\Desktop\Newtalking_Client_Windows\Newtalking_User_Info\bin\Debug\Newtalking_User_Info.dll
+C:\Users\Dell-\Desktop\Newtalking_Client_Windows\Newtalking_User_Info\bin\Debug\Newtalking_User_Info.pdb
+C:\Users\Dell-\Desktop\Newtalking_Client_Windows\Newtalking_User_Info\obj\Debug\Newtalking_User_Info.csprojResolveAssemblyReference.cache
+C:\Users\Dell-\Desktop\Newtalking_Client_Windows\Newtalking_User_Info\obj\Debug\Newtalking_User_Info.dll
+C:\Users\Dell-\Desktop\Newtalking_Client_Windows\Newtalking_User_Info\obj\Debug\Newtalking_User_Info.pdb

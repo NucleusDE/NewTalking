@@ -1,0 +1,14 @@
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_DAL_Data\bin\Release\Newtalking_DAL_Data.dll
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_DAL_Data\bin\Release\Newtalking_DAL_Data.pdb
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_DAL_Data\bin\Release\Model.dll
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_DAL_Data\bin\Release\Model.pdb
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_DAL_Data\obj\Release\Newtalking_DAL_Data.csprojResolveAssemblyReference.cache
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_DAL_Data\obj\Release\Newtalking_DAL_Data.dll
+C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Newtalking_DAL_Data\obj\Release\Newtalking_DAL_Data.pdb
+C:\Documents and Settings\Administrator\桌面\Newtalking_Server_Chatting\Newtalking_DAL_Data\bin\Release\Newtalking_DAL_Data.dll
+C:\Documents and Settings\Administrator\桌面\Newtalking_Server_Chatting\Newtalking_DAL_Data\bin\Release\Newtalking_DAL_Data.pdb
+C:\Documents and Settings\Administrator\桌面\Newtalking_Server_Chatting\Newtalking_DAL_Data\bin\Release\Model.dll
+C:\Documents and Settings\Administrator\桌面\Newtalking_Server_Chatting\Newtalking_DAL_Data\bin\Release\Model.pdb
+C:\Documents and Settings\Administrator\桌面\Newtalking_Server_Chatting\Newtalking_DAL_Data\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\Newtalking_Server_Chatting\Newtalking_DAL_Data\obj\Release\Newtalking_DAL_Data.dll
+C:\Documents and Settings\Administrator\桌面\Newtalking_Server_Chatting\Newtalking_DAL_Data\obj\Release\Newtalking_DAL_Data.pdb
