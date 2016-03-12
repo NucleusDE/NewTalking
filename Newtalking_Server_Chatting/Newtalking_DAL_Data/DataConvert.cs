@@ -206,4 +206,26 @@ namespace Newtalking_DAL_Data
             return null;
         }
     }
+
+    public class FileRequestConvert
+    {
+        public FileRequest ConvertToClass_Send(byte[] data)
+        {
+            FileRequest fileRequest = new FileRequest();
+            fileRequest.Uid = BitConverter.ToInt32(data, 2);
+            fileRequest.User_id = BitConverter.ToInt32(data, 6);
+            fileRequest.FileName = BitConverter.ToString(data, 10);
+
+            return fileRequest;
+        }
+
+        public ReceiveFileRequest ConvertToData_Receive(byte[] data)
+        {
+            ReceiveFileRequest receiveFile = new ReceiveFileRequest();
+            receiveFile.User_id = BitConverter.ToInt32(data, 0);
+            receiveFile.File_name_length = BitConverter.ToInt16(data, 4);
+            receiveFile.File_name = BitConverter.ToString(data, 6, receiveFile.File_name_length);
+            return receiveFile;
+        }
+    }
 }

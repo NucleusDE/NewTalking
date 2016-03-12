@@ -43,3 +43,5 @@ C:\Users\Dell-\Desktop\Newtalking_Server_Chatting_Temp\Newtalking_BLL_Server\obj
 C:\Users\Dell-\Desktop\Newtalking_Server_Chatting_Temp\Newtalking_BLL_Server\obj\Debug\Newtalking_BLL_Server.dll
 C:\Users\Dell-\Desktop\Newtalking_Server_Chatting_Temp\Newtalking_BLL_Server\obj\Debug\Newtalking_BLL_Server.pdb
 C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Newtalking_BLL_Server\bin\Debug\MySQLDriverCS.dll
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Newtalking_BLL_Server\bin\Debug\Flie_DAL.dll
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Newtalking_BLL_Server\bin\Debug\Flie_DAL.pdb

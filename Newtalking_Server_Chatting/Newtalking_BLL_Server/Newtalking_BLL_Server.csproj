@@ -54,17 +54,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.cs" />
+    <Compile Include="Account\AccountLogin.cs" />
+    <Compile Include="Account\AccountRequest.cs" />
     <Compile Include="Data_BLL.cs" />
-    <Compile Include="EditAccountInfo.cs" />
-    <Compile Include="Message.cs" />
+    <Compile Include="File\ReceiveFile.cs" />
+    <Compile Include="File\SelUserImage.cs" />
+    <Compile Include="File\SendUserImage.cs" />
+    <Compile Include="UserInfo\EditAccountInfo.cs" />
+    <Compile Include="Message\Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReadUserInfo.cs" />
+    <Compile Include="UserInfo\ReadUserInfo.cs" />
+    <Compile Include="File\SendFile.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data\Data.csproj">
       <Project>{4595DA78-C72B-484B-9C40-388719479F7E}</Project>
       <Name>Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Flie_DAL\File_DAL.csproj">
+      <Project>{a2b5d4f6-83bd-4bdc-aa69-bee5384b07ff}</Project>
+      <Name>File_DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{E68DCA14-25E4-4240-9540-C7F9466CB1EB}</Project>

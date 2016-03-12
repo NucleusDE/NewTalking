@@ -1,0 +1,5 @@
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Flie_DAL\bin\Debug\Flie_DAL.dll
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Flie_DAL\bin\Debug\Flie_DAL.pdb
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Flie_DAL\obj\Debug\Flie_DAL.csprojResolveAssemblyReference.cache
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Flie_DAL\obj\Debug\Flie_DAL.dll
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Flie_DAL\obj\Debug\Flie_DAL.pdb

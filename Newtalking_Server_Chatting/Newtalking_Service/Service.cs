@@ -54,7 +54,6 @@ namespace Newtalking_Service
                     tdClientService.Start();
                 }
             });
-
             tdService.Start();
         }
     }

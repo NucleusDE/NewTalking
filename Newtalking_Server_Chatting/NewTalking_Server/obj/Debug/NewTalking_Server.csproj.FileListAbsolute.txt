@@ -38,3 +38,5 @@ C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\NewTalking_Server\bin\Debug\Mo
 C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\NewTalking_Server\bin\Debug\Newtalking_DAL_Data.pdb
 C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\NewTalking_Server\bin\Debug\Server_Properties.pdb
 C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\NewTalking_Server\obj\Debug\NewTalking_Server.csprojResolveAssemblyReference.cache
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\NewTalking_Server\bin\Debug\Flie_DAL.dll
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\NewTalking_Server\bin\Debug\Flie_DAL.pdb

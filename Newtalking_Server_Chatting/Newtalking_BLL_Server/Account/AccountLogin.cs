@@ -6,6 +6,7 @@ using Model;
 using Newtalking_DAL_Data;
 using Newtalking_DAL_Server;
 using Data;
+using File_DAL;
 
 namespace Newtalking_BLL_Server
 {
@@ -30,13 +31,13 @@ namespace Newtalking_BLL_Server
             return sql.Login(loginData);
         }
 
-        public void Respect()
+        public bool Respect()
         {
             DataPackage data = new DataPackage();
             data.Client = onlineUser.Client;
             data.Data = convert.ConvertToBytes(isLogined, loginData.Uid);
             Sender sender = new Sender(onlineUser.Client);
-            sender.SendMessage(data);
+            return sender.SendMessage(data);
         }
 
         public void AddToOnlineUserList()
@@ -48,26 +49,4 @@ namespace Newtalking_BLL_Server
         }
     }
 
-    public class AccountRequest
-    {
-        AccountRequestConvert convert = new AccountRequestConvert();
-        DataPackage dataResponse = new DataPackage();
-
-        public AccountRequest(DataPackage data)
-        {
-            SQLService sql = new SQLService();
-            dataResponse.Client = data.Client;
-
-            LoginData loginData = convert.ConvertToClass(data.Data);
-            loginData.User_id = sql.AccountRequest(loginData.User_password);
-
-            dataResponse.Data = convert.ConvertToBytes(loginData);
-        }
-
-        public void Response()
-        {
-            Sender sender = new Sender(dataResponse.Client);
-            sender.SendMessage(dataResponse);
-        }
-    }
 }

@@ -44,12 +44,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Flie\ReceiveFile.cs" />
     <Compile Include="GetClient.cs" />
-    <Compile Include="MySqlHelper.cs" />
+    <Compile Include="SQL\MySqlHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Receiver.cs" />
-    <Compile Include="Sender.cs" />
-    <Compile Include="SQLService.cs" />
+    <Compile Include="Message\Receiver.cs" />
+    <Compile Include="Message\Sender.cs" />
+    <Compile Include="Flie\SendFile.cs" />
+    <Compile Include="SQL\SQLService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
@@ -61,6 +63,7 @@
       <Name>Server_Properties</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
