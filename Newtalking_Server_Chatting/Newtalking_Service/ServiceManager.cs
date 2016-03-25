@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Model
+namespace Newtalking_Service
 {
-    public class ReceiveFile
+    public class ServiceManager
     {
-        //    byte[] file_data
+
     }
 }

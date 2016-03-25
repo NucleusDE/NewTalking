@@ -5,7 +5,6 @@ C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Data\obj\Debug\Data.dll
 C:\Users\22279_000\Desktop\Newtalking_Server_Chatting\Data\obj\Debug\Data.pdb
 C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Data\bin\Debug\Data.dll
 C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Data\bin\Debug\Data.pdb
-C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Data\obj\Debug\Data.dll
 C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Data\obj\Debug\Data.pdb
 C:\Users\Dell-\Desktop\Newtalking_Server_Chatting_Temp\Data\bin\Debug\Data.dll
@@ -17,3 +16,4 @@ C:\Users\Dell-\Desktop\Newtalking_Server_Chatting_Temp\Data\obj\Debug\Data.Prope
 C:\Users\Dell-\Desktop\Newtalking_Server_Chatting_Temp\Data\obj\Debug\Data.csproj.GenerateResource.Cache
 C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Data\obj\Debug\Data.Properties.Resources.resources
 C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Data\obj\Debug\Data.csproj.GenerateResource.Cache
+C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache

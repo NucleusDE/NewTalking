@@ -52,6 +52,7 @@ namespace Newtalking_Service
                         }
                     });
                     tdClientService.Start();
+                    ThreadPool.ArrServiceThreads.Add(tdClientService);
                 }
             });
             tdService.Start();

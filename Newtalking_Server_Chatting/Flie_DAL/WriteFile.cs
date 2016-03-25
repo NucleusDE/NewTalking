@@ -15,7 +15,7 @@ namespace File_DAL
         public WriteFile(string path)
         {
             initFlag = File.Exists(path);
-            fileStream = new FileStream(path, FileMode.Create);
+            fileStream = new FileStream(path, FileMode.Create,FileAccess.Write);
         }
 
         public void Write(byte[] data)
