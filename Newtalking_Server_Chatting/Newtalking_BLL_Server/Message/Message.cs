@@ -32,32 +32,41 @@ namespace Newtalking_BLL_Server
                     arrOnlineUsers.Add(Data.Data.ArrOnlineUsers[i]);
             }
             bool isFoundOnline = false;
+
+            //[未升级] 数据库处理
             for (int i = 0; i < arrOnlineUsers.Count; i++)
             {
                 Data.OnlineUserProperties user = (Data.OnlineUserProperties)arrOnlineUsers[i];
                 if (msgData.Receiver_id == user.User_id)
                 {
                     isFoundOnline = true;
-                    DataPackage dataPacksge = new DataPackage();
-                    dataPacksge.Client = user.Client;
-                    Sender sender = new Sender(dataPacksge.Client);
-                    if (sender.SendMessage(dataPacksge))
+                    DataPackage dataPackage = new DataPackage();
+                    dataPackage.Client = user.Client;
+                    dataPackage.Data = bData;
+                    Sender sender = new Sender(dataPackage.Client);
+                    if (sender.SendMessage(dataPackage))
                         return;
                     else
                     {
-                        lock (Data.Data.ArrSendingMessages)
-                        {
-                            Data.Data.ArrSendingMessages.Add(msgData);
-                        }
+                        //lock (Data.Data.ArrSendingMessages)
+                        //{
+                        //    Data.Data.ArrSendingMessages.Add(msgData);
+                        //}
+                        SQLService sql = new SQLService();
+                        sql.InsertIntoOverMessages(msgData);
                     }
                     break;
                 }
             }
             if (!isFoundOnline)
-                lock (Data.Data.ArrSendingMessages)
-                {
-                    Data.Data.ArrSendingMessages.Add(msgData);
-                }
+            {
+                SQLService sql = new SQLService();
+                sql.InsertIntoOverMessages(msgData);
+            }
+                //lock (Data.Data.ArrSendingMessages)
+                //{
+                //    Data.Data.ArrSendingMessages.Add(msgData);
+                //}
         }
     }
 }

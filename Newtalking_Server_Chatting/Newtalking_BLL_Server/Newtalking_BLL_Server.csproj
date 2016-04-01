@@ -60,6 +60,7 @@
     <Compile Include="File\ReceiveFile.cs" />
     <Compile Include="File\SelUserImage.cs" />
     <Compile Include="File\SendUserImage.cs" />
+    <Compile Include="Message\MessageFresh.cs" />
     <Compile Include="UserInfo\EditAccountInfo.cs" />
     <Compile Include="Message\Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

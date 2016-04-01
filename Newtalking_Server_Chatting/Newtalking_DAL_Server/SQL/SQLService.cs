@@ -6,6 +6,7 @@ using Model;
 using MySQLDriverCS;
 using System.Data.Common;
 using System.Data;
+using System.Collections;
 
 namespace Newtalking_DAL_Server
 {
@@ -111,6 +112,130 @@ namespace Newtalking_DAL_Server
             }
 
         }
+
+        public bool CheckOnlineUser(int user_id)
+        {
+            try
+            {
+                con.Open();
+                sql = "SELECT * FROM user_online WHERE user_id=" + user_id;
+                MySQLCommand com = new MySQLCommand(sql, con);
+                MySQLDataReader reader = com.ExecuteReaderEx();
+                if (reader.Read())
+                    return true;
+                else
+                    return false;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public bool InsertOnlineUser(int user_id)
+        {
+            try
+            {
+                con.Open();
+                string sql = "INSERT INTO user_online(user_id) VALUES(" + user_id + ")";
+                MySQLCommand com = new MySQLCommand(sql, con);
+                com.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public bool DelOnlineUser(int user_id)
+        {
+            try
+            {
+                con.Open();
+                string sql = "DELETE user_online WHERE user_id=" + user_id;
+                MySQLCommand com = new MySQLCommand(sql, con);
+                com.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public bool InsertIntoOverMessages(MessageData msg)
+        {
+            try
+            {
+                con.Open();
+                sql = "INSERT INTO over_messages(sender_id,receiver_id,time,message) VALUES(" + msg.User_id + "," + msg.Receiver_id + "," + msg.Time + "," + msg.Message + ")";
+                MySQLCommand com = new MySQLCommand(sql, con);
+                com.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public ArrayList SelOverMessages(int user_id)
+        {
+            try
+            {
+                con.Open();
+                DataSet ds = new DataSet();
+                sql = "SELECT * FROM over_messages where receiver_id=" + user_id;
+                MySQLCommand com = new MySQLCommand(sql, con);
+                MySQLDataAdapter adp = new MySQLDataAdapter(com);
+                adp.Fill(ds);
+
+                ArrayList messages = new ArrayList();
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    MessageData msg = new MessageData();
+                    msg.User_id = (int)dr["sender_id"];
+                    msg.Receiver_id = (int)dr["receiver_id"];
+                    msg.Time = (DateTime)dr["time"];
+                    msg.Message = dr["message"].ToString();
+                    messages.Add(msg);
+                }
+
+                sql = "DELETE user_message where receiver_id=" + user_id;
+                com = new MySQLCommand(sql, con);
+                com.ExecuteNonQuery();
+
+                return messages;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        //public bool DelOverMessages(int bool)
+
 //         --插入用户
 //INSERT INTO users(user_name, user_password) VALUES(?, ?);
 

@@ -63,6 +63,7 @@
     <Compile Include="DataPackage.cs" />
     <Compile Include="ReceiveFile.cs" />
     <Compile Include="ReceiveFileRequest.cs" />
+    <Compile Include="RefreshRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">

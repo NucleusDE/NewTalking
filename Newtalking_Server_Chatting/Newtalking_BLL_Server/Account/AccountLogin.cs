@@ -37,6 +37,31 @@ namespace Newtalking_BLL_Server
             data.Client = onlineUser.Client;
             data.Data = convert.ConvertToBytes(isLogined, loginData.Uid);
             Sender sender = new Sender(onlineUser.Client);
+
+            //[未升级] 发送所有消息
+
+            //ArrayList arrTemp = new ArrayList();
+            //lock (Data.Data.ArrSendingMessages)
+            //{
+            //    ArrayList arrNew = Data.Data.ArrSendingMessages;
+            //    Data.Data.ArrSendingMessages.Clear();
+            //    for (int i = 0; i < arrNew.Count; i++)
+            //    {
+            //        MessageData msg = (MessageData)arrNew[i];
+            //        if (msg.Receiver_id == data.User_id)
+            //            arrTemp.Add(msg);
+            //        else
+            //            Data.Data.ArrSendingMessages.Add(msg);
+            //    }
+            //}
+            //for (int i = 0; i < arrTemp.Count; i++)
+            //{
+            //    MessageData msg = (MessageData)arrTemp[i];
+            //    Newtalking_DAL_Data.MessageDataConvert convert = new Newtalking_DAL_Data.MessageDataConvert();
+            //    Message msgSend = new Message(convert.ConvertToBytes(msg));
+            //    msgSend.Send();
+            //})
+
             return sender.SendMessage(data);
         }
 

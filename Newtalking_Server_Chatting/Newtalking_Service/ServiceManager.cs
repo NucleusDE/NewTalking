@@ -7,6 +7,9 @@ namespace Newtalking_Service
 {
     public class ServiceManager
     {
+        public class ThreadManager
+        {
 
+        }
     }
 }

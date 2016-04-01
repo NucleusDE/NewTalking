@@ -38,6 +38,7 @@ namespace Newtalking_Service
                         }
                         catch
                         {
+                            //[未升级] 从已登录用户中删除
                             lock (Data.Data.ArrOnlineUsers)
                             {
                                 ArrayList arrTemp = new ArrayList();

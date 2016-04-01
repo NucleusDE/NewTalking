@@ -228,4 +228,17 @@ namespace Newtalking_DAL_Data
             return receiveFile;
         }
     }
+
+    public class RefreshRequestConvert
+    {
+        public RefreshRequest ConvertToClass(byte[] data)
+        {
+            RefreshRequest rr = new RefreshRequest();
+            rr.MessageType = BitConverter.ToInt16(data, 0);
+            rr.Uid = BitConverter.ToInt32(data, 2);
+            rr.User_id = BitConverter.ToInt32(data, 6);
+
+            return rr;
+        }
+    }
 }

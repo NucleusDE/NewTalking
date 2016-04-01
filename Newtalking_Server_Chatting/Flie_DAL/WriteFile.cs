@@ -9,11 +9,13 @@ namespace File_DAL
 {
     public class WriteFile
     {
-        FileStream fileStream;
+        public FileStream fileStream;
         bool initFlag = false;
+        string filePath;
 
         public WriteFile(string path)
         {
+            filePath = path;
             initFlag = File.Exists(path);
             fileStream = new FileStream(path, FileMode.Create,FileAccess.Write);
         }
@@ -21,6 +23,18 @@ namespace File_DAL
         public void Write(byte[] data)
         {
             fileStream.Write(data, 0, data.Length);
+        }
+        public bool Delete()
+        {
+            try {
+                fileStream.Close();
+                File.Delete(filePath);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

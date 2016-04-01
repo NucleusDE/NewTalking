@@ -32,8 +32,6 @@ namespace Newtalking_BLL_Server
                         if (accountLogin.Login())
                         {
                             accountLogin.AddToOnlineUserList();
-                            Data_BLL data_BLL = new Data_BLL();
-                            data_BLL.SendAllMessage(accountLogin.loginData);
                         }
                         accountLogin.Respect();
                         break;
@@ -66,34 +64,13 @@ namespace Newtalking_BLL_Server
                         SendUserImage sendUserImage = new SendUserImage(data);
                         sendUserImage.Send();
                         break;
+                    case 9:         //消息刷新申请[未测试]
+                        MessageFresh msgFresh = new MessageFresh(data);
+                        msgFresh.Response();
+                        break;
                 }
             });
             tdAnalysis.Start();
-        }
-
-        private void SendAllMessage(LoginData data)
-        {
-            ArrayList arrTemp = new ArrayList();
-            lock(Data.Data.ArrSendingMessages)
-            {
-                ArrayList arrNew = Data.Data.ArrSendingMessages;
-                Data.Data.ArrSendingMessages.Clear();
-                for (int i = 0; i < arrNew.Count; i++)
-                {
-                    MessageData msg = (MessageData)arrNew[i];
-                    if (msg.Receiver_id == data.User_id)
-                        arrTemp.Add(msg);
-                    else
-                        Data.Data.ArrSendingMessages.Add(msg);
-                }
-            }
-            for (int i = 0; i < arrTemp.Count; i++)
-            {
-                MessageData msg = (MessageData)arrTemp[i];
-                Newtalking_DAL_Data.MessageDataConvert convert = new Newtalking_DAL_Data.MessageDataConvert();
-                Message msgSend = new Message(convert.ConvertToBytes(msg));
-                msgSend.Send();
-            }
         }
     }
 }

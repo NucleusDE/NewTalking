@@ -27,9 +27,9 @@ namespace Newtalking_DAL_Server
                 rdp.Data = buffer;
                 return rdp;
             }
-            catch
+            catch(Exception ex)
             {
-                return null;
+                throw ex;
             }
             
         }

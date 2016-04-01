@@ -23,23 +23,26 @@ namespace Newtalking_BLL_Server.File
 
         public bool Receive()
         {
+            Newtalking_DAL_Server.ReceiveFile rece = new Newtalking_DAL_Server.ReceiveFile(remoteClient);
+            FileCheck fileCheck = new FileCheck();
+            string[] strs = fileCheck.CheckCreateUserDir(rfr.User_id);
+            WriteFile writer = new WriteFile(strs[0]);
             try {
-                Newtalking_DAL_Server.ReceiveFile rece = new Newtalking_DAL_Server.ReceiveFile(remoteClient);
-                FileCheck fileCheck = new FileCheck();
-                string[] strs = fileCheck.CheckCreateUserDir(rfr.User_id);
-                WriteFile writer = new WriteFile(strs[0]);
                 byte[] data;
                 do
                 {
                     data = rece.Receive();
                     writer.Write(data);
                 } while (data.Length == 1024);
+                writer.fileStream.Close();
                 return true;
             }
             catch
             {
+                writer.Delete();
                 return false;
             }
         }
+
     }
 }

@@ -38,6 +38,7 @@ namespace Newtalking_DAL_Server
                     dpk.Data = data;
                     sender.SendMessage(dpk);
                 }
+                fsSend.Close();
                 return true; }
             catch
             {
