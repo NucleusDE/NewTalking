@@ -40,5 +40,3 @@ C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\NewTalking_Server\bin\Debug\Se
 C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\NewTalking_Server\obj\Debug\NewTalking_Server.csprojResolveAssemblyReference.cache
 C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\NewTalking_Server\bin\Debug\Flie_DAL.dll
 C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\NewTalking_Server\bin\Debug\Flie_DAL.pdb
-C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\NewTalking_Server\bin\Debug\NewTalking_Server.exe.CodeAnalysisLog.xml
-C:\Users\Dell-\Desktop\Newtalking_Server_Chatting\NewTalking_Server\bin\Debug\NewTalking_Server.exe.lastcodeanalysissucceeded

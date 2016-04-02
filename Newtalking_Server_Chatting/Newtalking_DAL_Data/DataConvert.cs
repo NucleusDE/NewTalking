@@ -82,20 +82,28 @@ namespace Newtalking_DAL_Data
 
         public LoginData ConvertToClass(byte[] data)
         {
-            byte[] bUid = new byte[4];
-            byte[] bUser_id = new byte[4];
-            byte[] bUser_pwd = new byte[16];
+            //byte[] bUid = new byte[4];
+            //byte[] bUser_id = new byte[4];
+            //byte[] bUser_pwd = new byte[16];
 
-            for (int i = 0; i < 4; i++)
-                bUid[i] = data[i + 2];
-            for (int i = 0; i < 4; i++)
-                bUser_id[i] = data[i + 6];
-            for (int i = 0; i < 16; i++)
-                bUser_pwd[i] = data[i + 10];
+            //for (int i = 0; i < 4; i++)
+            //    bUid[i] = data[i + 2];
+            //for (int i = 0; i < 4; i++)
+            //    bUser_id[i] = data[i + 6];
+            //for (int i = 0; i < 16; i++)
+            //    bUser_pwd[i] = data[i + 10];
 
             LoginData dataResult = new LoginData();
-            dataResult.User_id = BitConverter.ToInt32(bUser_id, 0);
-            dataResult.User_password = Encoding.Default.GetString(bUser_pwd);
+            dataResult.Uid = BitConverter.ToInt32(data, 2);
+            dataResult.User_id = BitConverter.ToInt32(data, 6);
+
+            string pwd = Encoding.Default.GetString(data, 10, 16);
+            int i = 0;
+            while(pwd[i]!='\0')
+            {
+                dataResult.User_password += pwd[i];
+                i++;
+            }
 
             return dataResult;
         }

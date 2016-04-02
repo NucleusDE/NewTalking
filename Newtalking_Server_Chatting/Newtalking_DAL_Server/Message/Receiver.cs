@@ -24,6 +24,14 @@ namespace Newtalking_DAL_Server
                 DataPackage rdp = new DataPackage();
 
                 rdp.Client = remoteClient;
+                int correctSize = 0;
+                while (buffer[correctSize] != 0)
+                {
+                    correctSize++;
+                }
+                byte[] correctBuffer = new byte[correctSize];
+                Buffer.BlockCopy(buffer, 0, correctBuffer, 0, correctSize);
+
                 rdp.Data = buffer;
                 return rdp;
             }
