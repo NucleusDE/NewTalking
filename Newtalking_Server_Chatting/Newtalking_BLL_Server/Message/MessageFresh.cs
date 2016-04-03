@@ -25,19 +25,25 @@ namespace Newtalking_BLL_Server
         {
             SQLService sql = new SQLService();
             ArrayList arrMsg = sql.SelOverMessages(rr.User_id);
+            Sender sender = new Sender(data.Client);
 
             foreach (object obj in arrMsg)
             {
                 MessageData msg = (MessageData)obj;
                 MessageDataConvert converter = new MessageDataConvert();
                 byte[] dataSend = converter.ConvertToBytes(msg);
-                Sender sender = new Sender(data.Client);
                 DataPackage dpk = new DataPackage();
                 dpk.Data = dataSend;
                 dpk.Client = data.Client;
                 if (!sender.SendMessage(dpk))
                     return false;
             }
+
+            //结束标识
+            DataPackage endDpk = new DataPackage();
+            endDpk.Data = BitConverter.GetBytes(0);
+            endDpk.Client = data.Client;
+            sender.SendMessage(endDpk);
 
             return true;
         }

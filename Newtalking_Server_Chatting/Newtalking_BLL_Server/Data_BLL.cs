@@ -52,13 +52,9 @@ namespace Newtalking_BLL_Server
                         sendFile.Send();
                         break;
                     case 7:        //接收文件[未测试]
-                        //开辟新线程[待修改]
-                        Thread tdReceiveFile = new Thread(delegate () {
-                            Newtalking_BLL_Server.File.ReceiveFile receFile = new File.ReceiveFile(data);
-                            receFile.Receive();
-                        });
-
-                        tdReceiveFile.Start();
+                                   //开辟新线程[待修改]
+                        Newtalking_BLL_Server.File.ReceiveFile receFile = new File.ReceiveFile(data);
+                        receFile.Receive();
                         break;
                     case 8:         //用户头像申请[未测试]
                         SendUserImage sendUserImage = new SendUserImage(data);
