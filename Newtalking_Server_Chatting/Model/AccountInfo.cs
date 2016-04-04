@@ -69,5 +69,20 @@ namespace Model
                 uid = value;
             }
         }
+
+        private string user_name;
+
+        public string User_name
+        {
+            get
+            {
+                return user_name;
+            }
+
+            set
+            {
+                user_name = value;
+            }
+        }
     }
 }

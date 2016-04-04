@@ -47,11 +47,11 @@ namespace Newtalking_BLL_Server
                         EditAccountInfo editUserInfo = new EditAccountInfo(data);
                         editUserInfo.Response();
                         break;
-                    case 6:        //请求文件[未测试]
+                    case 6:        //请求文件[未测试] --机制待修改[重要]
                         SendFile sendFile = new SendFile(data);
                         sendFile.Send();
                         break;
-                    case 7:        //接收文件[未测试]
+                    case 7:        //接收文件[未测试] --机制待修改[重要]
                                    //开辟新线程[待修改]
                         Newtalking_BLL_Server.File.ReceiveFile receFile = new File.ReceiveFile(data);
                         receFile.Receive();
@@ -63,6 +63,15 @@ namespace Newtalking_BLL_Server
                     case 9:         //消息刷新申请[未测试]
                         MessageFresh msgFresh = new MessageFresh(data);
                         msgFresh.Response();
+                        break;
+                    case 10:        //搜索用户
+
+                        break;
+                    case 11:        //添加关注
+                        break;
+                    case 12:        //撤销关注
+                        break;
+                    case 13:        //屏蔽
                         break;
                 }
             });

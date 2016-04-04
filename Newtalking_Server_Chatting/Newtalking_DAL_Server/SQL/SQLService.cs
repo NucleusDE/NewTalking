@@ -224,9 +224,70 @@ namespace Newtalking_DAL_Server
 
                 return messages;
             }
-            catch
+            catch(Exception ex)
             {
-                return null;
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public ArrayList SearchAccount(SelectAccount selAccount)
+        {
+            try
+            {
+                //AccountInfo accountInfo = new AccountInfo();
+                //accountInfo.Sex = short.Parse(reader["user_sex"].ToString());
+                //accountInfo.Birthday = DateTime.Parse(reader["user_birthday"].ToString());
+                //accountInfo.Phone = reader["uesr_phome"].ToString();
+                //return accountInfo;
+                con.Open();
+                sql = "INNER JOIN users_information ON users_information.user_name LIKE '%" + selAccount.Sel_info + "%'";
+                MySQLCommand com = new MySQLCommand(sql, con);
+                MySQLDataAdapter adp = new MySQLDataAdapter(com);
+                DataSet ds = new DataSet();
+                adp.Fill(ds);
+
+                ArrayList arr = new ArrayList();
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    AccountInfo accountInfo = new AccountInfo();
+                    accountInfo.User_id = Int32.Parse(dr["user_id"].ToString());
+                    accountInfo.User_name = dr["user_name"].ToString();
+                    accountInfo.Sex = short.Parse(dr["user_sex"].ToString());
+                    accountInfo.Birthday = DateTime.Parse(dr["user_birthday"].ToString());
+                    accountInfo.Phone = dr["uesr_phome"].ToString();
+                    arr.Add(accountInfo);
+                }
+
+                try
+                {
+                    sql = "SELECT * FROM users INNER JOIN users_information ON users.user_id = " + Int32.Parse(selAccount.Sel_info);
+                    com = new MySQLCommand(sql, con);
+                    DbDataReader reader = com.ExecuteReader();
+                    if(reader.Read())
+                    {
+                        AccountInfo accountInfo = new AccountInfo();
+                        accountInfo.User_id = Int32.Parse(reader["user_id"].ToString());
+                        accountInfo.User_name = reader["user_name"].ToString();
+                        accountInfo.Sex = short.Parse(reader["user_sex"].ToString());
+                        accountInfo.Birthday = DateTime.Parse(reader["user_birthday"].ToString());
+                        accountInfo.Phone = reader["uesr_phome"].ToString();
+                        arr.Add(accountInfo);
+                    }
+                }
+                catch
+                {
+
+                }
+
+                return arr;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
             }
             finally
             {
